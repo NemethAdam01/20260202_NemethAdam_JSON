@@ -49,13 +49,14 @@ jsonTomb.push({nev: "Cecilia", kor: 25})
 
 //9
 const szures = jsonTomb.filter(elem => elem.kor > 24)
+console.log(szures)
 
 //10
 const rendezes = jsonTomb.sort((a, b) => a.kor - b.kor)
 console.log(rendezes)
 
 //11
-const legnagyobb = rendezes[rendezes.length - 1].nev
+const legnagyobb = rendezes.reverse()[0]
 console.log(legnagyobb)
 
 //12
